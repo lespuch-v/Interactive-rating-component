@@ -1,0 +1,113 @@
+::ng-deep :root {
+  --smallPixel: 20px;
+  --borderRadius: 30px;
+}
+body {
+  background-color: hsl(213, 19%, 18%);
+  font-family: "Overpass", sans-serif;
+}
+.main-container {
+  width: 400px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rating-container {
+  padding: var(--smallPixel);
+  background-color: hsl(213, 19%, 18%);
+  border-radius: var(--borderRadius);
+}
+h1 {
+  color: hsl(0, 0%, 100%);
+}
+p {
+  color: hsl(217, 12%, 63%);
+  line-height: 23px;
+}
+button {
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+}
+.btn-rating {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.2em;
+  background-color: hsl(216, 12%, 54%);
+  color: rgb(219, 219, 219);
+  transition: all 200ms;
+}
+.btn-rating:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  font-weight: bolder;
+}
+.btn-submit {
+  width: 100%;
+  height: 50px;
+  background-color: hsl(25, 97%, 53%);
+  border-radius: 50px;
+  color: white;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  transition: all 200ms;
+}
+.btn-submit:hover {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+}
+.star-icon {
+  border-radius: 50%;
+  padding: var(--smallPixel);
+  background-color: hsl(217, 14%, 25%);
+}
+.thank-you-modal {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  display: none;
+  border-radius: var(--borderRadius);
+  background-color: hsl(217, 14%, 25%);
+
+  /* position the block element to the center of the screen */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.modalActive {
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  flex-direction: column;
+}
+.isHighlighted {
+  border: 3px solid greenyellow;
+  box-shadow: greenyellow 0px 2px 8px;
+}
+.thank-you-note {
+}
+.thank-you-paragraph {
+  padding: 0 var(--smallPixel) 0 var(--smallPixel);
+}
+.thank-headign {
+  margin: 0;
+}
+.feedback-note{
+    color: hsl(25, 97%, 53%);
+    border-radius: var(--borderRadius);
+    background-color: hsl(213, 19%, 18%);
+    padding: 10px;
+}
+.emojiIcon{
+    font-size: 1.9em;
+    margin: 10px 10px;
+}
